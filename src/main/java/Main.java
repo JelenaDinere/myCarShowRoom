@@ -31,6 +31,7 @@ public class Main {
 
             switch (userInput) {
                 case "Quit":
+                case "QUIT":
                     System.out.println("Exiting Application...");
                     break;
                     //addCar
@@ -76,7 +77,7 @@ public class Main {
     void viewAllCars(){
         ArrayList<Car> allCars = showroom.getAllCars();
         System.out.println("All Available Cars");
-        System.out.println("Car Name \t Manufacturer \t Car Type");
+        System.out.println("CarName \t Manufacturer \t CarType");
         for(Car car:allCars){
             System.out.println(car.name  + '\t'+ car.manufacturer + '\t'+ car.type);
         }

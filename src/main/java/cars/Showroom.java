@@ -20,7 +20,7 @@ public class Showroom {
     public String getSingleCar(int carIndex){
         try {
             Car car = this.cars.get(carIndex);
-            return "Car Number: " + car.id + "\n Car Manufacturer" + car.manufacturer + "\n Car Type" + car.type;
+            return "Car Number: " + car.id + "\n Car Name: " + car.name + "\n Car Type: " + car.type;
         }catch (Exception ex){
             return "Unable to find car.Please try again with valid index!!!";
         }
@@ -28,7 +28,7 @@ public class Showroom {
     //removeCar
     public String removeCar(int carIndex) {
         try {
-            cars.remove(carIndex);
+            this.cars.remove(carIndex);
         }catch (Exception exc){
             return "Unable to remove specified car";
     }
