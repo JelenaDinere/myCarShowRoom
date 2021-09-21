@@ -122,12 +122,6 @@ public class Main {
         System.out.println(car);
     }
 
-
-
-
-
-
-
     void removeCarByName() {
         System.out.println("Remove Car By Name..");
         System.out.println("Enter  Car Name:");
